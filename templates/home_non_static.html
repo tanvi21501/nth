@@ -15,7 +15,39 @@
   <link href="../nth/static/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <!-- Argon CSS -->
   <link type="text/css" href="../nth/static/assets/css/argon.css" rel="stylesheet">
- 
+ <style>
+ footer {
+    border-top: 1px solid orange;
+}
+
+.fa-heart {
+    color: #dc3545 !important;
+}
+
+.fa.fa-copyright {
+    color: black;
+}
+
+.tagline {
+    color: #17a2b8 !important;
+    cursor: pointer;
+}
+
+.card.card-dev {
+    width: 17rem;
+    height: 350px !important;
+    border-radius: 25px !important;
+}
+
+.strong {
+    font-weight: 700;
+    font-size: large;
+}
+
+.order-12 {
+    order: 0 !important;
+}
+ </style>
 </head>
 
 <body id="home">
@@ -159,10 +191,10 @@
           <div class="text-center text-muted mb-4" style="font-size: 28px;">
             <u>About Us</u>
           </div>
-          <div class="row justify-content-left">
-            <div class="col-rg" style="width: 350px;">
-              <img src="../nth/static/assets/img/brand/nth_logo.png" height="400px" width="400px" alt="NTH Logo">
-            </div>
+         <div class="row justify-content-left">
+            <!--   <div class="col-rg" style="width: 350px;">
+            <img src="../nth/static/assets/img/brand/nth_logo.png" height="400px" width="400px" alt="NTH Logo">
+            </div>-->
             <div class="col-lg">
               <div class="text-center text-muted mb-4">
                 <p style="font-size: 22px;text-align: justify;">
@@ -180,8 +212,38 @@
       </div>
       <!-- About Us End -->
 
-      <!-- Registration Start -->
-      <div class="container pt-lg-md" id="register" style="text-align: center; padding-top: 50px;padding-bottom: 50px;">
+    <!--Instructions start-->
+       <div class="container pt-lg-md" id="about_us" style="text-align: center; padding-top: 50px;padding-bottom: 50px;">
+          <div class="text-center text-muted mb-4" style="font-size: 28px;">
+            <u>Instructions</u>
+          </div>
+          <div class="row justify-content-right">
+          <!--  <div class="col-rg" style="width: 350px;">
+              <img src="../nth/static/assets/img/brand/nth_logo.png" height="400px" width="400px" alt="NTH Logo">
+            </div>-->
+            <div class="col-lg">
+              <div class="text-center text-muted mb-4">
+                <p style="font-size: 22px;text-align: justify;">
+                 Register to get your NTH username and password through the below given link.</p>
+ <p style="font-size: 22px;text-align: justify;">Open NTH website again: <a HREF="http://www.nth.credenz.in/">http://www.nth.credenz.in/</a>
+Login using the credentials sent on the mail.
+ You will be directed to the starting page of the hunt.
+To advance, crack the question, and put the answer in the URL:
+from
+<a href="http://www.nth.credenz.in/question.php">http://www.nth.credenz.in/question.php</a>
+to
+<a href="http://www.nth.credenz.in/answer.php">http://www.nth.credenz.in/answer.php</a></p>
+<p style="font-size: 22px;text-align: justify;">You need to use Google for many of them to solve. Of course, that is where you search for everything you don't know.
+Check the source of the pages, you'll get some important clues for hunting further. The titles may also give you clues.
+Most importantly, do not forget to have fun!</p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+    <!-- Registration Start -->
+      <!--  <div class="container pt-lg-md" id="register" style="text-align: center; padding-top: 50px;padding-bottom: 50px;">
           <div class="row justify-content-center">
             <div class="text-center text-muted mb-4" style="font-size: 28px;">
               <u>Register</u>
@@ -209,9 +271,10 @@
             <div class="col" style="padding: 20px;">
               <div class="card bg-secondary shadow border-0" style="height: 750px;padding-top: 20px;">
                 <div class="card-body px-lg-5 py-lg-5">
-                  <form action="{% url 'nth:Home" method="POST"> <!-- Create Player View -->
+                  <form action="{% url 'nth:Home" method="POST"> -->
+                  <!-- Create Player View -->
                     
-                    <div class="form-group">
+               <!--   <div class="form-group">
                       <div class="input-group input-group-alternative mb-3">
                         <div class="input-group-prepend">
                           <span class="input-group-text"><i class="ni ni-single-02"></i></span>
@@ -271,8 +334,8 @@
               </div>
             </div>
           </div>
-      </div>
-      <!-- Registration End -->
+      </div>-->
+      <!-- Registration End --> 
       
       <!-- Contact Us Start -->
       
@@ -323,7 +386,7 @@
       <!-- Contact Us End -->
     </section>
   </main>
-  <footer class="footer" style="background-color: #8898aa;">
+ <!-- <footer class="footer" style="background-color: #8898aa;">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -357,7 +420,163 @@
         </ul>
       </div>
     </div>
-  </footer>
+  </footer>-->
+
+   <section id="footer-section">
+            <footer id="main-footer" class="bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 order-12 text-center py-4">
+                            <h3 class="text-white order-last lead mb-4">
+                                <i class="fa fa-copyright"></i> PICT IEEE Student Branch
+                            </h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center py-4">
+                            <h3 class="text-white lead mb-4">
+                                Developed with <i class="fa fa-heart"></i> by <span class="strong  tagline" data-toggle="modal"
+                                data-target="#developerModal">PISB SE Web Team</span>
+                            </h3>
+                            <!-- <button
+                                class="btn btn-primary ml-3"
+                                data-toggle="modal"
+                                data-target="#developerModal"
+                            >
+                                Developers
+                            </button> -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 py-4 order-last social-menu contact-in">
+                                <ul style="padding:2rem;">
+                                    <li style="display: inline;">
+                                        <a href="https://www.facebook.com/pictieee/" target="_blank"><i class="fa fa-facebook" style="width:2rem; height:2rem" ></i></a>
+                                    </li>
+                                    <li style="display: inline;">
+                                        <a href="https://twitter.com/pictieee?s=08" target="_blank"><i class="fa fa-twitter" style="width:2rem; height:2rem"></i></a>
+                                    </li>
+                                    <li style="display: inline;">
+                                        <a href="https://www.instagram.com/pisbcredenz/?hl=en" target="_blank"><i class="fa fa-instagram" style="width:2rem; height:2rem"></i></a>
+                                    </li>
+                                </ul>
+                        </div> 
+                        <!-- <div class="col-lg-4 col-md-6  text-center py-4">
+                            <h3 class="text-white lead mb-4">
+                                Developed with <i class="fa fa-heart"></i> by <span class="strong  tagline" data-toggle="modal"
+                                data-target="#developerModal">PISB SE Web Team</span>
+                            </h3>-->
+                            <!-- <button
+                                class="btn btn-primary ml-3"
+                                data-toggle="modal"
+                                data-target="#developerModal"
+                            >
+                                Developers
+                            </button> -->
+                        <!-- </div>
+                        <div class="col-lg-4 col-md-6 order-12 order-last text-center py-4">
+                            <h3 class="text-white lead mb-4">
+                                <i class="fa fa-copyright"></i> PICT IEEE Student Branch
+                            </h3>
+                        </div> -->
+ 
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <!-- DEVELOPERS MODAL -->
+        <div class="modal fade text-dark" id="developerModal">
+            <div class="modal-dialog modal-xl modal-sm">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h3 class="modal-title text-white">
+                            Meet our Developers!
+                        </h3>
+                        <button class="close" data-dismiss="modal">
+                            <span style="font-size: 1.5em;">&times;</span>
+                        </button>
+                    </div>
+                    <div
+                        class="modal-body d-flex row justify-content-around pb-4"
+                    >
+                        <div
+                            class="col-md-6 col-lg-3 d-flex justify-content-center mb-4"
+                        >
+                            <div class="card card-dev h-100 shadow col-12"  style="height:120%">
+                                <img
+                                    src="../Karan.jpg"
+                                    alt="profile1"
+                                    class="card-img-top card-img-top-dev"
+                                    style="height:60%; width:100%; padding:5px;"
+                                />
+                                <div class="card-body text-center" >
+                                    <div class="card-title pb-2 h2"  style="font-size:20px;">
+                                       Karan Lakhwani
+                                    </div>
+                                    <hr />
+                                    <div class="card-text">
+                                        <div
+                                            class="social-links social-icons d-flex justify-content-center"
+                                        >
+                                        <ul>
+                                            <li style="display:inline;">
+                                                <a class="card-link" href="https://www.linkedin.com/in/karan-lakhwani-082a7a1a0" target="_blank"
+                                                ><i
+                                                  style="padding-bottom:10rem; padding-right:60px;"  class="fa fa-linkedin fa-lg d-inline-block"
+                                                ></i
+                                            ></a>
+                                            </li>
+                                            <li style="display:inline;">
+                                                <a class="card-link" href="https://github.com/karanlakhwani910" target="_blank"
+                                                ><i
+                                                    class="fa fa-github fa-lg d-inline-block" style="padding-bottom:10rem;"
+                                                ></i
+                                            ></a>
+                                            </li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-md-6 col-lg-3 d-flex justify-content-center mb-4"
+                        >
+                            <div class="card card-dev h-100 shadow col-12">
+                                <img
+                                    src="../Tanvi.jpg"
+                                    alt="profile1"
+                                    class="card-img-top card-img-top-dev"
+                                />
+                                <div class="card-body text-center">
+                                    <div class="card-title h2 pb-2" style="font-size:20px;">Tanvi Mane</div>
+                                    <hr />
+                                    <div class="card-text">
+                                        <div
+                                            class="social-links social-icons d-flex justify-content-center"
+                                        >
+                                        <ul>
+                                            <li style="display:inline;">
+                                                <a class="card-link" href="https://www.linkedin.com/in/tanvi-mane-19101a1b6" target="_blank"
+                                                ><i
+                                                   style=" padding-right:60px;"  class="fa fa-linkedin fa-lg d-inline-block"
+                                                ></i
+                                            ></a>
+                                            </li>
+                                            <li style="display:inline;">
+                                                <a class="card-link" href="https://github.com/tanvi21501" target="_blank"
+                                                ><i
+                                                    class="fa fa-github fa-lg d-inline-block"
+                                                ></i
+                                            ></a>
+                                            </li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
   <!-- Core -->
   <script src="../nth/static/assets/vendor/jquery/jquery.min.js"></script>
   <script src="../nth/static/assets/vendor/popper/popper.min.js"></script>
@@ -367,3 +586,4 @@
   <script src="../nth/static/assets/js/argon.js"></script>
 </body>
 </html>
+
