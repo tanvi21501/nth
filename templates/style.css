@@ -1,0 +1,76 @@
+.cardforimage{
+    justify-content: center;
+    display: grid;
+    margin: auto;
+}
+.image {
+    margin-top: 10px;
+    position:relative;
+    display:inline-block;
+    padding: 7px 7px 0px;
+    background-color: rgb(23, 117, 172);
+    border-radius: 0.4rem;
+}
+.overlay {
+    display:none;
+    
+}
+.image:hover .overlay {
+    width:100%;
+    height:40%;
+    position:absolute;
+    top:0;
+    left:0;
+    display:inline-block;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    transform: translateY(150%);
+    color: white;
+    
+
+    /* All other styling - see example */
+
+    
+}
+.image:hover img {
+    vertical-align:top;
+    opacity: 0.4; /* Default is baseline, this fixes a common alignment issue */
+}
+
+.contact-box{
+    width: 70%;
+    margin: 60px auto 0px;
+    font-family: 'Noto Sans JP', sans-serif;
+
+
+}.complete-card{
+    justify-content: center;
+    display: grid;            
+}
+.name{
+    text-align: center;
+    background-color:rgb(23, 117, 172);
+    color: white;
+    font-size: 150%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+}
+.image a{
+    color:white;
+    text-decoration: none;
+}
+.image:hover {
+    transform: scale(1.05);
+}
+@media screen and (max-width:1000px){
+    .complete-card{
+        margin-top: 60px;
+    }.contact-box{
+        margin-top: 60px;
+    }
+    
+
+}
